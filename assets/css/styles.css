@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    font-family: 'Lora', serif;  /* Body text font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Lora', serif;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/hero.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center center; /* Centers the image */
+    height: 100vh; /* Make the hero section take full height of the viewport */
+    color: white; /* Adjust text color for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background behind the text */
+    padding: 2rem;
+    border-radius: 10px; /* Optional: Adds rounded corners to the container */
+}
+
+.hero h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-family: 'Lora', serif;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    padding: 2rem 0;
+}
+
+.about h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.about ul {
+    list-style: square;
+    padding-left: 1.5rem;
+}
+
+/* Projects Section */
+.projects {
+    padding: 2rem 0;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project h4 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social-links a:hover {
+    color: #f0f0f0;
+    text-decoration: underline;
+    margin: 0 0.5rem;
+    font-family: 'Lora', serif;
+}
+
+/* Contact Page Styles */
+form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projects-grid {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 1rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Mobile Menu Toggle Styles */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-links.active {
+    display: block;
+}
